@@ -1,21 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>今天，是＿＿的日子</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" />
   <style>
     :root {
       --app-background: #F7F5EF;
       --app-card-background: #FFFCF8;
       --app-text-color: #2F2F2F;
-      --app-button-text: rgba(255, 255, 255, 0.35);
+      --app-button-text: rgba(255,255,255,0.35);
       --app-button-border: transparent;
     }
     body {
-      background-color: var(--app-background);
+      margin: 0;
+      padding: 0;
       font-family: 'Noto Serif TC', serif;
+      background-color: var(--app-background);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -71,6 +73,6 @@
     <p class="credits">來自觀察人類的 Genai 🧺</p>
   </div>
   <button class="floating-button" id="newSentence">🌱</button>
-  <script type="module" src="./scripts/main.js"></script>
+  <script type="module" src="main.js"></script>
 </body>
 </html>
