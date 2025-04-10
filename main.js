@@ -1,11 +1,13 @@
-
 let themes = [];
 let sentences = [];
 
 async function fetchData() {
+  // 自動處理 GitLab Pages 的子路徑
+  const basePath = window.location.pathname.replace(/\/$/, "");
+
   const [themesRes, sentenceRes] = await Promise.all([
-    fetch('themes.json'),
-    fetch('sentences.json')
+    fetch(`${basePath}/themes.json`),
+    fetch(`${basePath}/sentences.json`)
   ]);
 
   themes = await themesRes.json();
@@ -40,6 +42,7 @@ function setTodayDate() {
   document.getElementById("dateDisplay").innerText = formatted;
 }
 
+// ✅ 等 DOM 載入完成後綁定按鈕事件
 document.addEventListener("DOMContentLoaded", () => {
   fetchData();
 
