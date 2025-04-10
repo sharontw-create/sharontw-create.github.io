@@ -1,18 +1,20 @@
-
 let themes = [];
 let sentences = [];
 
 async function fetchData() {
-  const [themesRes, sentenceRes] = await Promise.all([
-    fetch('themes.json'),
-    fetch('sentences.json')
-  ]);
-
-  themes = await themesRes.json();
-  sentences = await sentenceRes.json();
-  setRandomSentence();
-  setRandomTheme();
-  setTodayDate();
+  try {
+    const [themesRes, sentenceRes] = await Promise.all([
+      fetch('themes.json'),
+      fetch('sentences.json')
+    ]);
+    themes = await themesRes.json();
+    sentences = await sentenceRes.json();
+    setRandomSentence();
+    setRandomTheme();
+    setTodayDate();
+  } catch (error) {
+    console.error("資料載入失敗：", error);
+  }
 }
 
 function setRandomSentence() {
