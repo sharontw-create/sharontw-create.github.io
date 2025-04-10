@@ -2,7 +2,7 @@ let themes = [];
 let sentences = [];
 
 async function fetchData() {
-  // ✅ 自動抓 GitLab Pages 路徑
+  // 自動處理 GitLab Pages 的子路徑
   const basePath = window.location.pathname.replace(/\/$/, "");
 
   const [themesRes, sentenceRes] = await Promise.all([
@@ -32,4 +32,25 @@ function setRandomTheme() {
   root.style.setProperty('--app-button-text', theme.colors.buttonText);
   root.style.setProperty('--app-button-border', theme.colors.buttonBorder);
 
-  document.getElementById("newSentence
+  document.getElementById("newSentence").innerText = theme.emoji;
+}
+
+function setTodayDate() {
+  const now = new Date();
+  const options = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' };
+  const formatted = now.toLocaleDateString('zh-TW', options);
+  document.getElementById("dateDisplay").innerText = formatted;
+}
+
+// ✅ 等 DOM 載入完成後綁定按鈕事件
+document.addEventListener("DOMContentLoaded", () => {
+  fetchData();
+
+  const button = document.getElementById("newSentence");
+  if (button) {
+    button.addEventListener("click", () => {
+      setRandomSentence();
+      setRandomTheme();
+    });
+  }
+});
