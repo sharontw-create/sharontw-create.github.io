@@ -3,23 +3,16 @@ let themes = [];
 let sentences = [];
 
 async function fetchData() {
-  try {
-    // 自動抓取 GitLab Pages 的路徑
-    const basePath = window.location.pathname.replace(/\/[^/]*\.html$/, '/');
+  const [themesRes, sentenceRes] = await Promise.all([
+    fetch('themes.json'),
+    fetch('sentences.json')
+  ]);
 
-    const [themesRes, sentenceRes] = await Promise.all([
-      fetch(`${basePath}themes.json`),
-      fetch(`${basePath}sentences.json`)
-    ]);
-
-    themes = await themesRes.json();
-    sentences = await sentenceRes.json();
-    setRandomSentence();
-    setRandomTheme();
-    setTodayDate();
-  } catch (error) {
-    console.error("載入失敗：", error);
-  }
+  themes = await themesRes.json();
+  sentences = await sentenceRes.json();
+  setRandomSentence();
+  setRandomTheme();
+  setTodayDate();
 }
 
 function setRandomSentence() {
