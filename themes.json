@@ -1,10 +1,9 @@
-
 [
   {
-    "name": "NADESHIKO",
+    "name": "KOHBAI",
     "emoji": "🌸",
     "colors": {
-      "background": "#DC9FB4",
+      "background": "#E198B4",
       "card": "#FFF8F5",
       "textColor": "#2F2F2F",
       "buttonText": "rgba(255,255,255,0.35)",
@@ -12,57 +11,211 @@
     }
   },
   {
-    "name": "SUMIRE",
-    "emoji": "💜",
+    "name": "FUJI",
+    "emoji": "🟣",
     "colors": {
-      "background": "#66327C",
-      "card": "#F8F4FA",
+      "background": "#8B81C3",
+      "card": "#F6F4FA",
+      "textColor": "#2F2F2F",
+      "buttonText": "rgba(255,255,255,0.3)",
+      "buttonBorder": "transparent"
+    }
+  },
+  {
+    "name": "WAKANA",
+    "emoji": "🌱",
+    "colors": {
+      "background": "#9BA88D",
+      "card": "#F6FBF1",
+      "textColor": "#2F2F2F",
+      "buttonText": "rgba(255,255,255,0.3)",
+      "buttonBorder": "transparent"
+    }
+  },
+  {
+    "name": "HANABA",
+    "emoji": "🌼",
+    "colors": {
+      "background": "#FBE251",
+      "card": "#FFFBEC",
+      "textColor": "#333333",
+      "buttonText": "rgba(0,0,0,0.25)",
+      "buttonBorder": "transparent"
+    }
+  },
+  {
+    "name": "AONI",
+    "emoji": "🫐",
+    "colors": {
+      "background": "#5A6E91",
+      "card": "#F0F4F8",
       "textColor": "#2F2F2F",
       "buttonText": "rgba(255,255,255,0.35)",
       "buttonBorder": "transparent"
     }
   },
   {
-    "name": "KURUMI",
-    "emoji": "🌰",
+    "name": "USUBENI",
+    "emoji": "🩷",
     "colors": {
-      "background": "#874C3C",
-      "card": "#FAF4F1",
+      "background": "#F4A7B9",
+      "card": "#FFF4F6",
+      "textColor": "#2F2F2F",
+      "buttonText": "rgba(0,0,0,0.2)",
+      "buttonBorder": "transparent"
+    }
+  },
+  {
+    "name": "TSUYUKUSA",
+    "emoji": "🔵",
+    "colors": {
+      "background": "#3399CC",
+      "card": "#EFF9FC",
       "textColor": "#2F2F2F",
       "buttonText": "rgba(255,255,255,0.35)",
       "buttonBorder": "transparent"
     }
   },
   {
-    "name": "SUOH",
-    "emoji": "🌹",
+    "name": "AKANE",
+    "emoji": "🟥",
     "colors": {
-      "background": "#8E354A",
-      "card": "#FAF2F0",
+      "background": "#B7282E",
+      "card": "#FFF4F2",
       "textColor": "#2F2F2F",
-      "buttonText": "rgba(255,255,255,0.35)",
+      "buttonText": "rgba(255,255,255,0.4)",
       "buttonBorder": "transparent"
     }
   },
   {
-    "name": "SHIRONEZUMI",
-    "emoji": "🕊️",
+    "name": "MIZUASAGI",
+    "emoji": "🧊",
     "colors": {
-      "background": "#BDC0BA",
-      "card": "#FCFCFB",
+      "background": "#A5DEE4",
+      "card": "#F4FAFB",
       "textColor": "#2F2F2F",
       "buttonText": "rgba(0,0,0,0.25)",
       "buttonBorder": "transparent"
     }
   },
   {
-    "name": "RURI",
-    "emoji": "🟦",
+    "name": "KOKE",
+    "emoji": "🌿",
     "colors": {
-      "background": "#005CAF",
-      "card": "#F4F8FC",
+      "background": "#69821B",
+      "card": "#F6FBEF",
       "textColor": "#2F2F2F",
+      "buttonText": "rgba(255,255,255,0.3)",
+      "buttonBorder": "transparent"
+    }
+  },
+  {
+    "name": "KURO",
+    "emoji": "⚫",
+    "colors": {
+      "background": "#0A0A0A",
+      "card": "#F0F0F0",
+      "textColor": "#0A0A0A",
       "buttonText": "rgba(255,255,255,0.4)",
+      "buttonBorder": "transparent"
+    }
+  },
+  {
+    "name": "SHIRONERI",
+    "emoji": "🕊️",
+    "colors": {
+      "background": "#F3F3F2",
+      "card": "#FFFFFF",
+      "textColor": "#2F2F2F",
+      "buttonText": "rgba(0,0,0,0.2)",
+      "buttonBorder": "transparent"
+    }
+  },
+  {
+    "name": "YAMABUKI",
+    "emoji": "🟡",
+    "colors": {
+      "background": "#F8B500",
+      "card": "#FFF8E7",
+      "textColor": "#2F2F2F",
+      "buttonText": "rgba(0,0,0,0.25)",
+      "buttonBorder": "transparent"
+    }
+  },
+  {
+    "name": "SENZAI",
+    "emoji": "🍵",
+    "colors": {
+      "background": "#69B076",
+      "card": "#EFFAF0",
+      "textColor": "#2F2F2F",
+      "buttonText": "rgba(255,255,255,0.25)",
+      "buttonBorder": "transparent"
+    }
+  },
+  {
+    "name": "TURMERIC",
+    "emoji": "🧡",
+    "colors": {
+      "background": "#E2943B",
+      "card": "#FFF5EB",
+      "textColor": "#2F2F2F",
+      "buttonText": "rgba(255,255,255,0.35)",
+      "buttonBorder": "transparent"
+    }
+  },
+  {
+    "name": "MOMO",
+    "emoji": "🍑",
+    "colors": {
+      "background": "#F596AA",
+      "card": "#FFF0F3",
+      "textColor": "#2F2F2F",
+      "buttonText": "rgba(0,0,0,0.2)",
+      "buttonBorder": "transparent"
+    }
+  },
+  {
+    "name": "HAI",
+    "emoji": "🌫️",
+    "colors": {
+      "background": "#828282",
+      "card": "#FAFAFA",
+      "textColor": "#2F2F2F",
+      "buttonText": "rgba(255,255,255,0.2)",
+      "buttonBorder": "transparent"
+    }
+  },
+  {
+    "name": "WAKAMIDORI",
+    "emoji": "🍀",
+    "colors": {
+      "background": "#98D98E",
+      "card": "#F2FAF2",
+      "textColor": "#2F2F2F",
+      "buttonText": "rgba(0,0,0,0.2)",
+      "buttonBorder": "transparent"
+    }
+  },
+  {
+    "name": "ASAGI",
+    "emoji": "💠",
+    "colors": {
+      "background": "#33A6B8",
+      "card": "#E8F6F9",
+      "textColor": "#2F2F2F",
+      "buttonText": "rgba(255,255,255,0.3)",
+      "buttonBorder": "transparent"
+    }
+  },
+  {
+    "name": "BENI",
+    "emoji": "🌺",
+    "colors": {
+      "background": "#D9333F",
+      "card": "#FFF1F1",
+      "textColor": "#2F2F2F",
+      "buttonText": "rgba(255,255,255,0.35)",
       "buttonBorder": "transparent"
     }
   }
