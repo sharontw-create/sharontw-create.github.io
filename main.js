@@ -28,8 +28,8 @@ async function fetchData() {
   try {
     // 使用相對路徑
     const [themesRes, sentenceRes] = await Promise.all([
-      fetch('./themes.json'),
-      fetch('./sentences.json')
+      fetch('themes.json'),
+      fetch('sentences.json')
     ]);
 
     themes = await themesRes.json();
@@ -43,7 +43,7 @@ async function fetchData() {
     themes = [
       {
         name: "DEFAULT",
-        emoji: "🌱",
+        emoji: "🕊️",
         colors: {
           background: "#F7F5EF",
           card: "#FFFCF8",
