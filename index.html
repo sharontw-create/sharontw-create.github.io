@@ -26,8 +26,9 @@
       background-color: var(--app-card-background);
       color: var(--app-text-color);
       border-radius: 24px;
-      padding: 48px 36px;
+      padding: 32px 24px;
       max-width: 460px;
+      width: 90vw;
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
       display: flex;
       flex-direction: column;
@@ -53,6 +54,12 @@
       align-items: center;
       cursor: pointer;
       border: none;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.12); }
+      100% { transform: scale(1); }
     }
     .credits {
       font-size: 12px;
@@ -72,6 +79,6 @@
     <p class="credits">來自觀察人類的 Genai 🧺</p>
   </div>
   <button class="floating-button" id="newSentence">🕊️</button>
-  <script src="main.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 </html>
