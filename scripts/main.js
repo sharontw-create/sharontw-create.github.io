@@ -6,8 +6,8 @@ async function fetchData() {
   const basePath = window.location.pathname.replace(/\/$/, "");
 
   const [themesRes, sentenceRes] = await Promise.all([
-    fetch(`${basePath}/public/themes.json`),
-    fetch(`${basePath}/public/sentences.json`)
+    fetch(`${basePath}/themes.json`),
+    fetch(`${basePath}/sentences.json`)
   ]);
 
   themes = await themesRes.json();
