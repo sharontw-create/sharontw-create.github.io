@@ -66,6 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const button = document.getElementById("newSentence");
   if (button) {
     button.addEventListener("click", () => {
+      console.log("按鈕被點擊"); // 加入除錯訊息
       // 確保資料已載入
       if (themes.length === 0 || sentences.length === 0) {
         fetchData();
@@ -74,5 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
         setRandomTheme();
       }
     });
+  } else {
+    console.error("找不到按鈕元素"); // 加入錯誤訊息
   }
 }); 
