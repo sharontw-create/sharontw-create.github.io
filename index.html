@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>今天，是＿＿的日子</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" />
+  <style>
+    :root {
+      --app-background: #F7F5EF;
+      --app-card-background: #FFFCF8;
+      --app-text-color: #2F2F2F;
+      --app-button-text: rgba(255, 255, 255, 0.35);
+      --app-button-border: transparent;
+    }
+    body {
+      background-color: var(--app-background);
+      font-family: 'Noto Serif TC', serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .card {
+      background-color: var(--app-card-background);
+      color: var(--app-text-color);
+      border-radius: 24px;
+      padding: 48px 36px;
+      max-width: 460px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .sentence {
+      font-size: 20px;
+      line-height: 2;
+      letter-spacing: 0.05em;
+    }
+    .floating-button {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background-color: var(--app-button-text);
+      color: white;
+      border-radius: 9999px;
+      width: 56px;
+      height: 56px;
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      border: none;
+    }
+    .credits {
+      font-size: 12px;
+      text-align: center;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="sentence">
+      <p>今天，</p>
+      <p>是「<span id="sentence">喝第二杯咖啡不用理由</span>」</p>
+      <p>的日子。</p>
+    </div>
+    <p id="dateDisplay" class="credits"></p>
+    <p class="credits">來自觀察人類的 Genai 🧺</p>
+  </div>
+  <button class="floating-button" id="newSentence">🌱</button>
+  <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
